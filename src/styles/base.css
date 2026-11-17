@@ -80,6 +80,10 @@ body {
   line-height: 1;
   color: var(--vino-texto);
 }
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
 
 @media (min-width: 768px) {
   .app {

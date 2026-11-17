@@ -1,0 +1,96 @@
+.bestiary {
+  display: grid;
+  gap: 20px;
+}
+
+.bestiary__search input {
+  width: 100%;
+  height: 46px;
+  border: 0;
+  border-bottom: 1.5px solid var(--tinta);
+  background: none;
+  color: var(--tinta);
+  font-family: var(--fuente-titulo);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.bestiary__search input:focus {
+  outline: 2px solid var(--vino-texto);
+  outline-offset: 2px;
+}
+
+.bestiary__label {
+  margin: 18px 0 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
+.bestiary__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.bestiary__filter {
+  padding: 10px 2px 2px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--tinta-suave);
+  font-family: var(--fuente-texto);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.bestiary__filter--active {
+  border-bottom-color: var(--vino-texto);
+  color: var(--vino-texto);
+  font-weight: 600;
+}
+
+.bestiary__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.bestiary__msg {
+  color: var(--tinta-suave);
+  font-style: italic;
+}
+
+.bestiary__more {
+  margin-top: 14px;
+  padding: 8px 2px;
+  border: 0;
+  border-bottom: 2px solid var(--vino-texto);
+  background: none;
+  color: var(--vino-texto);
+  font-family: var(--fuente-titulo);
+  font-style: italic;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .bestiary {
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+
+  .bestiary__filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .bestiary__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 48px;
+  }
+}
