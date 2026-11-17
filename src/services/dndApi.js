@@ -19,3 +19,8 @@ export async function getMonsterList(crValues = []) {
 }
 
 export const getMonster = (index) => getJSON(`/api/monsters/${index}`)
+
+export const getByUrl = (url) => getJSON(url)
+
+export const getMagicItemList = async () => (await getJSON('/api/magic-items')).results
+export const getEquipmentList = async () => (await getJSON('/api/equipment')).results
