@@ -80,7 +80,6 @@ export default function Bestiary() {
 
   return (
     <section>
-      <h2 className="sheet__title">Bestiario</h2>
 
       <div className="bestiary">
         <div className="bestiary__controls">
