@@ -123,3 +123,31 @@
   letter-spacing: 1px;
   color: var(--tinta-suave);
 }
+.entry--badge .entry__title,
+.entry--badge .entry__subtitle {
+  padding-right: 120px;
+}
+
+.entry--badge .entry__stats {
+  width: 100%;
+}
+
+.entry__badge {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  padding: 2px 8px;
+  border: 2px solid;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transform: rotate(-4deg);
+}
+
+.entry__text {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+  color: var(--tinta-suave);
+}
