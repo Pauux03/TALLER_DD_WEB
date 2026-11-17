@@ -1,0 +1,101 @@
+.loot {
+  display: grid;
+  gap: 28px;
+}
+
+.loot__label {
+  margin: 18px 0 4px;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--tinta-suave);
+}
+
+.loot__cr {
+  margin: 0;
+  font-family: var(--fuente-titulo);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--vino-texto);
+}
+
+.loot__tier {
+  margin: 4px 0 8px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
+.loot__range {
+  width: 100%;
+  margin: 8px 0 20px;
+  accent-color: var(--vino-texto);
+}
+
+.loot__button {
+  width: 100%;
+  height: 56px;
+  border: 0;
+  background: var(--vino-texto);
+  color: var(--crema);
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+  box-shadow: 4px 4px 0 var(--tinta);
+  cursor: pointer;
+}
+
+.loot__button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--tinta);
+}
+
+.loot__button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.loot__coins {
+  font-size: 1.1rem;
+}
+
+.loot__dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  border-radius: 50%;
+  vertical-align: -1px;
+}
+
+.loot__heading {
+  margin: 0 0 6px;
+  font-family: var(--fuente-titulo);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.9rem;
+  color: var(--vino-texto);
+}
+
+.loot__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.loot__msg {
+  color: var(--tinta-suave);
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .loot {
+    grid-template-columns: 340px 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .loot__items {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 40px;
+  }
+}

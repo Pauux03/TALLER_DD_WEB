@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Tabs from './components/Tabs'
 import DiceTray from './modules/DiceTray'
 import Bestiary from './modules/Bestiary'
+import Loot from './modules/Loot'
 
 export default function App() {
   const [section, setSection] = useState('bestiario')
@@ -16,7 +17,7 @@ export default function App() {
       <Tabs active={section} onChange={setSection} />
 
       <main className="sheet">
-        {section === 'bestiario' && <h2 className="sheet__title">Bestiario</h2>}
+        {section === 'botin' && <Loot />}
         {section === 'bestiario' && <Bestiary />}
         {section === 'dados' && <DiceTray />}
       </main>
