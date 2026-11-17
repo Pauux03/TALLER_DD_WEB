@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Cuaderno del DM</string>
+    <string name="title_activity_main">Cuaderno del DM</string>
+    <string name="package_name">com.pau.grimoriodm</string>
+    <string name="custom_url_scheme">com.pau.grimoriodm</string>
+</resources>
