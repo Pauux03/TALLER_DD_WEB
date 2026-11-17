@@ -1,11 +1,12 @@
 # Cuaderno del Dungeon Master
 
 Herramienta interactiva para asistir a un Dungeon Master durante partidas de
-Dungeons & Dragons 5e. Funciona en navegador (diseño responsive, mobile-first)
+Dungeons & Dragons 5e. Funciona en navegador (diseño responsive)
 y como aplicación Android.
 
 **Aplicación web:** (https://cuaderno-dungeon-master.vercel.app/)
-**APK (Android):** disponible en la sección [Releases](<ENLACE A TUS RELEASES>)
+
+**APK (Android):** disponible en la sección [Releases] (https://github.com/Pauux03/TALLER_DD_WEB/releases)
 
 ## Módulos
 
