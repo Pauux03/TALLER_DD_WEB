@@ -1,0 +1,183 @@
+.dice {
+  display: grid;
+  gap: 28px;
+}
+
+.dice__picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dice__option {
+  min-width: 56px;
+  height: 44px;
+  padding: 0 14px;
+  border: 2px solid transparent;
+  border-radius: 52% 48% 50% 50%;
+  background: none;
+  color: var(--tinta);
+  font-family: var(--fuente-titulo);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.dice__option--active {
+  border-color: var(--vino-texto);
+  color: var(--vino-texto);
+}
+
+.dice__stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.dice__die {
+  position: relative;
+  width: 100%;
+  max-width: 260px;
+}
+
+.dice__shape {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dice__value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuente-titulo);
+  font-size: 4rem;
+  color: var(--vino-texto);
+}
+
+.dice__stamp {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  padding: 2px 10px;
+  border: 2px solid var(--vino-texto);
+  color: var(--vino-texto);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transform: rotate(8deg);
+}
+
+.dice__stamp--fumble {
+  border-color: var(--rojo-pifia);
+  color: var(--rojo-pifia);
+}
+
+.dice__roll {
+  width: 100%;
+  max-width: 320px;
+  height: 56px;
+  border: 0;
+  background: var(--vino-texto);
+  color: var(--crema);
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+  box-shadow: 4px 4px 0 var(--tinta);
+  cursor: pointer;
+}
+
+.dice__roll:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--tinta);
+}
+
+.dice__roll:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+@keyframes dice-shake {
+  0% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(-6deg);
+  }
+}
+
+.dice__die--rolling .dice__shape {
+  animation: dice-shake 0.18s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dice__die--rolling .dice__shape {
+    animation: none;
+  }
+}
+
+/* Registro de tiradas */
+.log__title {
+  margin: 0 0 8px;
+  font-family: var(--fuente-titulo);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--vino-texto);
+}
+
+.log__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.log__row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.log__dots {
+  flex: 1;
+  min-width: 0;
+  border-bottom: 1.5px dotted var(--punteado);
+}
+
+.log__row--natural {
+  color: var(--vino-texto);
+  font-weight: 600;
+}
+
+.log__row--fumble {
+  color: var(--rojo-pifia);
+  font-weight: 600;
+}
+
+.log__empty {
+  margin: 0;
+  color: var(--tinta-suave);
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .dice {
+    grid-template-columns: 170px 1fr 300px;
+    gap: 56px;
+    align-items: start;
+  }
+
+  .dice__picker {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  .dice__value {
+    font-size: 5rem;
+  }
+}
