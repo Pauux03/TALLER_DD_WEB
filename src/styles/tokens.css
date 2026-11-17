@@ -1,0 +1,18 @@
+:root {
+  --vino: #5B0F1F;
+  --vino-oscuro: #3F0914;
+  --vino-texto: #6E1428;
+  --crema: #F1E6CF;
+  --tinta: #2A1A14;
+  --tinta-suave: #6B5A4A;
+  --punteado: #9A8668;
+
+  --rar-comun: #6B6357;
+  --rar-poco-comun: #2F6B45;
+  --rar-raro: #2A4F8F;
+  --rar-muy-raro: #6A3E8F;
+  --rar-legendario: #8A5A00;
+
+  --fuente-titulo: 'IM Fell English', Georgia, serif;
+  --fuente-texto: 'Crimson Pro', Georgia, serif;
+}
